@@ -1,38 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+#  Petify
 
-First, run the development server:
+**O cuidado do seu pet, na palma da sua mão.**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Site oficial para adquirir a coleira inteligente Petify — um dispositivo que monitora a saúde, localização e rotina do seu pet em tempo real.
+
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](#licença)
+
+** Acesse o site:** [em breve](#)
+
+</div>
+
+---
+
+##  Sobre o projeto
+
+O Petify é a plataforma de vendas da nossa coleira inteligente para pets.
+Através de sensores embutidos, a coleira coleta dados em tempo real e envia
+tudo direto para o app do tutor, permitindo acompanhar a saúde e a rotina do
+animal de qualquer lugar.
+
+Este repositório contém o site institucional e de vendas,
+construído em Next.js, onde o tutor conhece o produto, os recursos e realiza
+a compra da coleira.
+
+##  O que a coleira monitora
+
+| | Recurso | Descrição |
+|---|---|---|
+ **Monitora sinais vitais** | Recebe alertas imediatos em caso de qualquer alteração fora do normal. |
+ **Localização em tempo real** | Acompanhe cada passo do seu pet, onde quer que ele esteja. |
+ **Monitora atividades** | Acompanha o nível de atividade do pet ao longo do dia. |
+ **Monitoramento de sono** | Entenda a qualidade de sono e descanso do seu pet. |
+ **Resistente à água** | Perfeita para todos os momentos do dia, sem preocupação. |
+ **Alertas inteligentes** | Notificações de saúde, fugas e comportamentos incomuns. |
+
+
+
+##  Estrutura do projeto
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+##  Rodando localmente
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Pré-requisito: [Node.js](https://nodejs.org/) 18.17 ou superior.
 
-## Learn More
+bash
+# clone o repositório
+git clone https://github.com/seu-usuario/petify.git
+cd petify
 
-To learn more about Next.js, take a look at the following resources:
+# instale as dependências
+npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# rode em modo desenvolvimento
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+##  Licença
 
-teste testetsetetesa
+Distribuído sob a licença MIT. Veja `LICENSE` para mais detalhes.
+
+---
+
+<div align="center">
+Feito por: Agno J.
+  Bruno G.
+  Gustavo M.
+  Heloísa M.
+  Laura L.
+  
+</div>
