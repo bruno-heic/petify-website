@@ -1,7 +1,7 @@
 export const navItems = [
     {
-      name: "Loja",
-      url: "/shop",
+      name: "Produtos",
+      url: "/products",
     },
     {
       name: "Sobre",

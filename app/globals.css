@@ -43,6 +43,10 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+
+  --color-button-primary: var(--button-primary);
+  --color-button-primary-foreground: var(--button-primary-foreground);
 }
 
 @layer base {
@@ -91,6 +95,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  --button-primary: oklch(0.6 0.15 220);
+  --button-primary-foreground: oklch(1 0 0);
 }
 
 .dark {
@@ -189,6 +196,7 @@
 }
 
 @layer utilities {
+
   /* MAIN CONTENT LAYOUT */
   .main-content {
     @apply h-full flex-1 overflow-auto;
@@ -196,10 +204,24 @@
 
   /* HEADER */
   .header {
-    @apply hidden items-center justify-between gap-5 p-5 sm:flex lg:py-7 xl:gap-10;
+    @apply hidden items-center justify-between p-10 sm:flex;
   }
   .header-nav {
-    @apply h5 gap-6 lg:gap-20;
+    @apply flex;
+  }
+  .header-nav-item {
+    @apply body-1 text-accent-foreground/80  hover:text-black transition-colors duration-150;
+  }
+
+  /* BUTTONS */
+  .primary-button {
+    @apply hidden sm:flex items-center justify-between p-5 px-8 bg-button-primary text-button-primary-foreground rounded-3xl hover:bg-button-primary/80
+         transition-colors duration-150 subtitle-2;
+  }
+
+  .mobile-primary-button {
+    @apply flex sm:hidden items-center justify-between p-3 px-4 bg-button-primary text-button-primary-foreground rounded-3xl hover:bg-button-primary/80
+         transition-colors duration-150 text-[14px] font-normal;
   }
 
 }

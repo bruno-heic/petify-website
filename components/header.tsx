@@ -16,22 +16,22 @@ const Header = () => {
         <header className="header">
             <Image src="/assets/logo.png" alt="logo" width={80} height={80} />
             <nav className="header-nav">
-                <ul className="flex gap-6 md:gap-20">
+                <ul className="flex gap-15 lg:gap-50">
                 {navItems.map(({ name, url }) => (
                     <Link href={url} key={name} className="lg:w-full">
                     <li
                         className={cn(
-                        "sidebar-nav-item",
-                        pathName === url && "shad-active",
+                        "header-nav-item",
+                        pathName === url && "text-button-primary",
                         )}
                     >
-                        <p className="hidden lg:block">{name}</p>
+                        <p className="hidden md:flex">{name}</p>
                     </li>
                     </Link>
                 ))}
                 </ul>
             </nav>
-            <Button>Fale conosco</Button>
+            <Button className="primary-button" >Fale conosco</Button>
         </header>
     )
 }
