@@ -19,6 +19,7 @@
   body {
     @apply bg-[var(--color-background)] text-[var(--color-foreground)] min-h-screen font-sans antialiased;
   }
+  
 }
 
 @layer utilities {
@@ -58,4 +59,17 @@
   .overline {
     @apply text-[10px] leading-[14px] font-normal;
   }
+
+
+  /* MAIN CONTENT LAYOUT */
+  .main-content {
+    @apply h-full flex-1 overflow-auto;
+  }
+
+  /* HEADER */
+  .header {
+    @apply hidden items-center justify-between gap-5 p-5 sm:flex lg:py-7 xl:gap-10;
+  }
+
+
 }
