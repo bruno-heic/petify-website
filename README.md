@@ -6,12 +6,12 @@
 
 Site oficial para adquirir a coleira inteligente Petify — um dispositivo que monitora a saúde, localização e rotina do seu pet em tempo real.
 
-[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3-38BDF8?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/license-MIT-lightgrey)](#licença)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
-** Acesse o site:** [em breve](#)
+ Acesse o site: [em breve](#)
 
 </div>
 
@@ -43,28 +43,27 @@ a compra da coleira.
 
 ##  Estrutura do projeto
 
-```
+
 
 ```
-
-##  Rodando localmente
+-Rodando localmente
 
 Pré-requisito: [Node.js](https://nodejs.org/) 18.17 ou superior.
 
 bash
-# clone o repositório
+-clone o repositório
 git clone https://github.com/seu-usuario/petify.git
 cd petify
 
-# instale as dependências
+-instale as dependências
 npm install
 
-# rode em modo desenvolvimento
+-rode em modo desenvolvimento
 npm run dev
 
 
 Abra [http://localhost:3000](http://localhost:3000) no navegador.
-
+```
 
 ##  Licença
 
