@@ -11,8 +11,4 @@ export const navItems = [
       name: "Suporte",
       url: "/support",
     },
-    {
-      name: "Media",
-      url: "/media",
-    },
   ];
