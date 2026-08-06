@@ -3,7 +3,7 @@ import AboutTech from "@/components/about/tech";
 import AboutMission from "@/components/about/mission";
 
 
-export default function AboutPage() {
+const About = () => {
   return (
     <div>
       <AboutHero />
@@ -12,3 +12,5 @@ export default function AboutPage() {
     </div>
   );
 }
+
+export default About;
