@@ -1,18 +1,20 @@
 import Header from "@/components/header";
 import MobileHeader from "@/components/mobileHeader";
 import React from "react";
+import Footer from "@/components/footer"
 
 export const dynamic = "force-dynamic";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
     return (
-        <main className="flex h-screen flex-col">
-          <Header/>
-          <MobileHeader/>
-        <section className="flex h-full flex-1 flex-col">
-          <div className="main-content">{children}</div>
-        </section>
-      </main>
+      <div className="flex flex-col min-h-screen">
+        <Header/>
+        <MobileHeader/>
+        <main className="flex-1">
+          {children}
+        </main>
+        <Footer/>
+      </div>
     )
 }
 

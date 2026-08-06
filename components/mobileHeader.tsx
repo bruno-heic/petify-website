@@ -27,7 +27,9 @@ const MobileHeader = () => {
 
     return (
         <header className="sm:hidden flex items-center justify-between p-3 px-5">
-            <Image src="/assets/logo.png" alt="logo" width={60} height={60} />
+            <Link href="/">
+                <Image src="/assets/logo.png" alt="logo" width={60} height={60} />
+            </Link>
             <div className="flex gap-5">
                 <Button size="sm" className="mobile-primary-button" >Fale conosco</Button>
                 <Sheet>

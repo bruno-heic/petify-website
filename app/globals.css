@@ -47,6 +47,7 @@
 
   --color-button-primary: var(--button-primary);
   --color-button-primary-foreground: var(--button-primary-foreground);
+  --color-footer-primary: var(--footer-primary);
 }
 
 @layer base {
@@ -98,6 +99,7 @@
 
   --button-primary: oklch(0.6 0.15 220);
   --button-primary-foreground: oklch(1 0 0);
+  --footer-primary: oklch(0.961 0 0);
 }
 
 .dark {
@@ -204,7 +206,7 @@
 
   /* HEADER */
   .header {
-    @apply hidden items-center justify-between p-10 sm:flex;
+    @apply hidden items-center justify-between p-5 sm:flex;
   }
   .header-nav {
     @apply flex;
@@ -222,6 +224,9 @@
   .mobile-primary-button {
     @apply flex sm:hidden items-center justify-between p-3 px-4 bg-button-primary text-button-primary-foreground rounded-3xl hover:bg-button-primary/80
          transition-colors duration-150 text-[14px] font-normal;
+  }
+  .footer {
+    @apply flex bg-footer-primary
   }
 
 }
