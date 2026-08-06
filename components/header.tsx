@@ -33,7 +33,9 @@ const Header = () => {
                 ))}
                 </ul>
             </nav>
-            <Button className="primary-button" >Fale conosco</Button>
+            <Button className="primary-button cursor-pointer">
+                <a href="mailto:petify.help@gmail.com">Fale conosco</a>
+            </Button>
         </header>
     )
 }
