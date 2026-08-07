@@ -4,20 +4,18 @@ import { Thermometer, Clock, ShieldAlert } from "lucide-react";
 export default function AboutHero() {
   return (
     <section className="mx-auto max-w-3xl px-5 py-16 text-center sm:pt-20">
-      <p className="body-1 text-foreground">
-        A <span className="font-bold text-blue-600">Petify</span> nasceu da
+      <p className="h1 text-foreground">
+        A <span className="font-bold text-button-primary">Petify</span> nasceu da
         união entre tecnologia, inovação e amor pelos animais.
       </p>
-      <p className="body-2 mt-3 text-muted-foreground">
+      <p className="body-1 text-xl mt-3 text-muted-foreground">
         Nosso objetivo é oferecer aos tutores uma forma prática, segura e
         inteligente de acompanhar a rotina e o bem-estar de seus pets, mesmo
         à distância.
       </p>
 
       <div className="relative mx-auto mt-16 w-[clamp(280px,68vw,460px)]">
-        {/* Celular: moldura + tela empilhadas, com leve flutuação no conjunto */}
         <div className="animate-float-phone relative aspect-[9/19.5] w-full">
-          {/* Tela do app: fica ATRÁS da moldura, recortada na área vazada */}
           <div className="absolute inset-[4.5%_5%] overflow-hidden rounded-[9%]">
             <Image
               src="/assets/about/screen-about.png"
@@ -28,8 +26,6 @@ export default function AboutHero() {
               sizes="(max-width: 640px) 68vw, 460px"
             />
           </div>
-
-          {/* Moldura do iPhone: fica NA FRENTE, com a tela vazada (transparente) */}
           <Image
             src="/assets/about/iPhone 16.png"
             alt=""
@@ -40,7 +36,6 @@ export default function AboutHero() {
           />
         </div>
 
-        {/* Cartão: temperatura corporal */}
         <div className="animate-float-1 absolute -left-[8%] top-[4%] z-20 flex w-[clamp(150px,42%,230px)] items-center gap-2 rounded-2xl bg-emerald-50 p-[6%] shadow-md">
           <Thermometer className="h-[clamp(18px,4.5vw,26px)] w-[clamp(18px,4.5vw,26px)] shrink-0 text-emerald-600" />
           <div className="text-left">
@@ -53,7 +48,6 @@ export default function AboutHero() {
           </div>
         </div>
 
-        {/* Cartão: horas monitoradas */}
         <div className="animate-float-2 absolute -left-[12%] top-[46%] z-20 flex w-[clamp(150px,42%,230px)] -translate-y-1/2 items-center gap-2 rounded-2xl bg-blue-50 p-[6%] shadow-md">
           <Clock className="h-[clamp(18px,4.5vw,26px)] w-[clamp(18px,4.5vw,26px)] shrink-0 text-blue-600" />
           <div className="text-left">
@@ -65,8 +59,6 @@ export default function AboutHero() {
             </p>
           </div>
         </div>
-
-        {/* Cartão: alertas */}
         <div className="animate-float-3 absolute -right-[8%] bottom-[14%] z-20 flex w-[clamp(120px,34%,180px)] items-center gap-2 rounded-2xl bg-rose-50 p-[6%] shadow-md">
           <ShieldAlert className="h-[clamp(18px,4.5vw,26px)] w-[clamp(18px,4.5vw,26px)] shrink-0 text-rose-600" />
           <div className="text-left">

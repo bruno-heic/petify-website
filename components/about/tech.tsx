@@ -10,10 +10,10 @@ export default function AboutTech() {
   return (
     <section className="mx-auto max-w-3xl px-5 py-16 text-center">
       <h2 className="h2">
-        Utilizamos a <span className="text-blue-600">Tecnologia</span> como
+        Utilizamos a <span className="text-button-primary">Tecnologia</span> como
         uma ferramenta de aproximação entre{" "}
-        <span className="text-blue-600">Tutores</span> e{" "}
-        <span className="text-blue-600">Pets</span>.
+        <span className="text-button-primary">Tutores</span> e{" "}
+        <span className="text-button-primary">Pets</span>.
       </h2>
       <p className="body-2 mx-auto mt-4 max-w-xl text-muted-foreground">
         Buscamos oferecer uma experiência acessível, intuitiva e compatível
@@ -23,7 +23,7 @@ export default function AboutTech() {
       <div className="mt-10 grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
         <ul className="space-y-4 text-left">
           {RECURSOS.map((item) => (
-            <li key={item} className="subtitle-1 text-blue-600">
+            <li key={item} className="subtitle-1 text-button-primary">
               {item}
             </li>
           ))}

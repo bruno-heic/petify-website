@@ -4,7 +4,7 @@ export default function AboutTeam() {
   return (
     <section className="mx-auto max-w-3xl px-5 pb-20 text-center">
       <h2 className="h2">
-        Conheça nossa <span className="text-blue-600">Equipe</span>.
+        Conheça nossa <span className="text-button-primary">Equipe</span>.
       </h2>
       <p className="body-2 mx-auto mt-4 max-w-xl text-muted-foreground">
         Nós criamos a Petify para resolver problemas que vivemos diariamente.
