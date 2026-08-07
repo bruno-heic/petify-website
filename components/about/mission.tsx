@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function AboutMission() {
   return (
     <section className="mx-auto max-w-3xl px-5 pb-16 text-center">
@@ -11,12 +12,13 @@ export default function AboutMission() {
         entre pets e seus tutores.
       </p>
 
-      <div className="mx-auto mt-8 flex h-64 w-full items-center justify-center rounded-2xl border-2 border-dashed border-blue-300 bg-neutral-50">
-        <span className="body-2 text-muted-foreground">
-          Foto tutor + pet — inovacao.png
-        </span>
-      </div>
-      {/* <Image src="/assets/about/inovacao.png" alt="Tutor com seu pet" width={900} height={500} className="mx-auto mt-8 rounded-2xl object-cover" /> */}
+      <Image
+        src="/assets/about/inovacao.png"
+        alt="Tutor com seu pet"
+        width={900}
+        height={500}
+        className="mx-auto mt-8 w-full max-w-md rounded-2xl object-cover"
+      />
     </section>
   );
 }

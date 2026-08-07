@@ -1,3 +1,4 @@
+import Image from "next/image";
 const RECURSOS = [
   "Localização por GPS",
   "Sensor de Movimento",
@@ -28,14 +29,22 @@ export default function AboutTech() {
           ))}
         </ul>
 
-        <div className="mx-auto flex h-56 w-56 items-center justify-center rounded-full border-2 border-dashed border-blue-300 bg-neutral-50">
-          <span className="body-2 text-center text-muted-foreground">
-            Foto da coleira
-            <br />
-            collar.png
-          </span>
+        <div className="mx-auto flex items-center justify-center gap-4">
+          <Image
+            src="/assets/about/collar.png"
+            alt="Coleira Petify"
+            width={450}
+            height={450}
+            className="h-auto w-2/3 object-contain"
+          />
+          <Image
+            src="/assets/about/pingent.png"
+            alt="Pingente Petify"
+            width={450}
+            height={450}
+            className="h-auto w-2/3 object-contain"
+          />
         </div>
-        {/* <Image src="/assets/about/collar.png" alt="Coleira Petify" width={220} height={220} className="object-contain" /> */}
       </div>
     </section>
   );
