@@ -1,10 +1,13 @@
 <div align="center">
 
-#  Petify
+<p align="center">
+  <img src="public/assets/logo.png" alt="Logo do projeto" width="200">
+</p>
+
 
 **O cuidado do seu pet, na palma da sua mão.**
 
-Site oficial para adquirir a coleira inteligente Petify — um dispositivo que monitora a saúde, localização e rotina do seu pet em tempo real.
+Site oficial para adquirir a coleira ou pingente inteligente Petify, um dispositivo que monitora a saúde, localização e rotina do seu pet em tempo real.
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
