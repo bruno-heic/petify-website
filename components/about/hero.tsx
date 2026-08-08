@@ -4,11 +4,11 @@ import { Thermometer, Clock, ShieldAlert } from "lucide-react";
 export default function AboutHero() {
   return (
     <section className="mx-auto max-w-3xl px-5 py-16 text-center sm:pt-20">
-      <p className="h1 text-foreground">
-        A <span className="font-bold text-button-primary">Petify</span> nasceu da
+      <p className="h2 md:h1 text-foreground">
+        A <span className="h2 md:h1 font-bold text-button-primary">Petify</span> nasceu da
         união entre tecnologia, inovação e amor pelos animais.
       </p>
-      <p className="body-1 text-xl mt-3 text-muted-foreground">
+      <p className="body-1 md:text-xl mt-3 text-muted-foreground">
         Nosso objetivo é oferecer aos tutores uma forma prática, segura e
         inteligente de acompanhar a rotina e o bem-estar de seus pets, mesmo
         à distância.

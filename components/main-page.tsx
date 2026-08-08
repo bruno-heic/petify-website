@@ -78,8 +78,10 @@ const Main = () => {
       {/* HERO SECTION */}
       <section className="px-6 md:px-14 lg:px-20 py-12 md:py-16 flex flex-col md:flex-row items-center gap-10 md:gap-6">
 
-        {/* Left */}
-        <div className="flex-1 flex flex-col gap-7 max-w-xl">
+        {/* Coluna esquerda: título, parágrafo, features, botões */}
+        <div className="flex-1 flex flex-col gap-7 max-w-xl w-full">
+
+          {/* Título */}
           <div>
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
               O cuidado do seu pet
@@ -92,6 +94,11 @@ const Main = () => {
           <p className="text-base md:text-lg text-muted-foreground">
             O Petify ajuda você a monitorar a saúde bem-estar e rotina do seu pet de forma simples e organizada.
           </p>
+
+          {/* Imagem: só aparece aqui no mobile, fica escondida no desktop */}
+          <div className="flex justify-center items-center md:hidden">
+            <Image src="/assets/main-page-image.png" alt="main-page-image" width={700} height={700} />
+          </div>
 
           {/* Feature list */}
           <ul className="flex flex-col gap-5">
@@ -138,10 +145,11 @@ const Main = () => {
           </div>
         </div>
 
-        {/* Right: mockup */}
-        <div className="flex-1 flex justify-center items-center relative">
-            <Image src="/assets/main-page-image.png" alt="main-page-image" width={700} height={700}  />
+        {/* Coluna direita: imagem — só aparece no desktop */}
+        <div className="hidden md:flex flex-1 justify-center items-center">
+          <Image src="/assets/main-page-image.png" alt="main-page-image" width={700} height={700} />
         </div>
+
       </section>
 
       {/* BENEFITS SECTION */}

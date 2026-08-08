@@ -9,13 +9,13 @@ const RECURSOS = [
 export default function AboutTech() {
   return (
     <section className="mx-auto max-w-3xl px-5 py-16 text-center">
-      <h2 className="h2">
-        Utilizamos a <span className="text-button-primary">Tecnologia</span> como
+      <h1 className="h2 md:h1">
+        Utilizamos a <span className="h2 md:h1 text-button-primary">Tecnologia</span> como
         uma ferramenta de aproximação entre{" "}
-        <span className="text-button-primary">Tutores</span> e{" "}
-        <span className="text-button-primary">Pets</span>.
-      </h2>
-      <p className="body-2 mx-auto mt-4 max-w-xl text-muted-foreground">
+        <span className="h2 md:h1 text-button-primary">Tutores</span> e{" "}
+        <span className="h2 md:h1 text-button-primary">Pets</span>.
+      </h1>
+      <p className="body-1 md:text-xl mx-auto mt-4 max-w-xl text-muted-foreground">
         Buscamos oferecer uma experiência acessível, intuitiva e compatível
         com diferentes dispositivos já presentes no mercado.
       </p>
@@ -23,7 +23,7 @@ export default function AboutTech() {
       <div className="mt-10 grid grid-cols-1 items-center gap-8 sm:grid-cols-2">
         <ul className="space-y-4 text-left">
           {RECURSOS.map((item) => (
-            <li key={item} className="subtitle-1 text-button-primary">
+            <li key={item} className="text-xl font-semibold text-button-primary">
               {item}
             </li>
           ))}

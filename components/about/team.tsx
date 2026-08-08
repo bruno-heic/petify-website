@@ -3,10 +3,10 @@ const TEAM = ["Bruno G.", "Agno S.", "Gustavo M.", "Heloisa M.", "Laura L."];
 export default function AboutTeam() {
   return (
     <section className="mx-auto max-w-3xl px-5 pb-20 text-center">
-      <h2 className="h2">
-        Conheça nossa <span className="text-button-primary">Equipe</span>.
+      <h2 className="h2 md:h1">
+        Conheça nossa <span className="h2 md:h1 text-button-primary">Equipe</span>.
       </h2>
-      <p className="body-2 mx-auto mt-4 max-w-xl text-muted-foreground">
+      <p className="body-1 md:text-xl mx-auto mt-4  text-muted-foreground">
         Nós criamos a Petify para resolver problemas que vivemos diariamente.
         Nossa experiência real possibilitou o desenvolvimento de um projeto
         verdadeiramente conectado com as dores de quem cuida de animais.
