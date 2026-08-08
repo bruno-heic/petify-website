@@ -14,7 +14,7 @@ Site oficial para adquirir a coleira ou pingente inteligente Petify, um disposit
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 
- Acesse o site: [em breve](#)
+ Acesse o site: https://petify-website.vercel.app/
 
 </div>
 
