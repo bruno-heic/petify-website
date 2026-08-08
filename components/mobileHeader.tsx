@@ -22,7 +22,6 @@ import { Button } from "@/components/ui/button";
 
 const MobileHeader = () => {
     
-    const [open, setOpen] = React.useState(false);
     const pathName = usePathname();
 
     return (
@@ -31,7 +30,9 @@ const MobileHeader = () => {
                 <Image src="/assets/logo.png" alt="logo" width={60} height={60} />
             </Link>
             <div className="flex gap-5">
-                <Button size="sm" className="mobile-primary-button" >Fale conosco</Button>
+                <Link href="mailto:petify.help@gmail.com">
+                    <Button size="sm" className="mobile-primary-button" >Fale conosco</Button>
+                </Link>
                 <Sheet>
                     <SheetTrigger className="cursor-pointer">
                         <Image src="/assets/menu.svg" alt="menu" width={20} height={20} />

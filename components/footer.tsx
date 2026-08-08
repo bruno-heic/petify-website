@@ -87,7 +87,7 @@ const SocialIcons = () => (
 
 const Footer = () => {
   return (
-    <footer className="footer flex-col w-full">
+    <footer className="footer flex flex-col w-full mt-auto">
 
       <div className="px-6 md:px-10 pt-10 pb-6">
 

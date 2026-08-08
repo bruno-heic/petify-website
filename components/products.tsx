@@ -21,7 +21,7 @@ const products = [
     installment: "ou 12x de R$ 34,15 sem juros",
     href: "",
     features: [
-      { icon: Activity, title: "Monitora sinais vitais", desc: "Receba alertas imediatos em caso de qualquer alteração fora do normal." },
+      { icon: Activity, title: "Monitora atividade", desc: "Receba alertas imediatos em caso de qualquer alteração fora do normal." },
       { icon: HeartPulse, title: "Monitora sinais vitais", desc: "Receba alertas imediatos em caso de qualquer alteração fora do normal." },
       { icon: Droplets, title: "Resistente à água", desc: "Perfeita para todos os momentos do dia." },
       { icon: MapPin, title: "Localização em tempo real", desc: "Acompanhe cada passo do seu pet." },
@@ -50,7 +50,7 @@ const kitRows = [
   { label: "Temperatura corporal", Pawdant: false, petIt: true },
   { label: "Relatórios mensais", Pawdant: true, petIt: true },
   { label: "Área de segurança", Pawdant: false, petIt: true },
-  { label: "Alertas sonoros", Pawdant: true, petMapetItis: true },
+  { label: "Alertas sonoros", Pawdant: true, petIt: true },
   { label: "Rotina organizada", Pawdant: false, petIt: true },
   { label: "Tudo sincronizado", Pawdant: true, petIt: true },
 ];
@@ -87,15 +87,13 @@ export default function PetTechSection() {
 
             <div className="flex flex-col gap-6 flex-1 w-full">
               <div>
-                <p className="text-4xl font-bold text-foreground">
-                  {p.name}
-                </p>
+                <p className="text-4xl font-bold text-foreground">{p.name}</p>
                 <p className="text-lg text-muted-foreground mt-1 max-w-xs">
                   {p.tagline}
                 </p>
               </div>
 
-              <ul className="grid grid-cols-2 gap-x-6 gap-y-5">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-5">
                 {p.features.map((f, idx) => (
                   <li key={idx} className="flex items-start gap-2">
                     <f.icon className="h-4 w-4 shrink-0 text-button-primary mt-0.5" />
@@ -111,22 +109,21 @@ export default function PetTechSection() {
                 ))}
               </ul>
 
-              <div className="flex items-center gap-6 mt-2">
-                {p.price ? (
-                  <div className="rounded-full border border-border px-5 py-2">
+              {/* Preço + botão: coluna em mobile, linha em sm+ */}
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3 mt-2">
+                {p.price && (
+                  <div className="rounded-full border border-border px-5 py-2 self-start sm:self-auto">
                     <p className="text-base font-bold text-foreground leading-none">
                       {p.price}
                     </p>
-                    <p className="text-[14px] text-muted-foreground mt-0.5">
+                    <p className="text-[14px] text-muted-foreground mt-0.5 whitespace-nowrap">
                       {p.installment}
                     </p>
                   </div>
-                ) : (
-                  <span />
                 )}
                 <Link
                   href={p.href}
-                  className="rounded-full bg-button-primary px-8 py-3 text-sm font-semibold text-white"
+                  className="rounded-full bg-button-primary px-8 py-3 text-sm font-semibold text-white text-center self-start sm:self-auto"
                 >
                   Em breve
                 </Link>
@@ -147,33 +144,40 @@ export default function PetTechSection() {
           </p>
         </div>
 
-        <div className="rounded-3xl bg-gray-50 border border-border p-8 md:p-10">
-          <div className="grid grid-cols-3 gap-4">
+        <div className="rounded-3xl bg-gray-50 border border-border p-4 sm:p-8 md:p-10 overflow-x-auto">
+          <div className="min-w-[300px] grid grid-cols-3 gap-2 sm:gap-4">
+            {/* Coluna de labels */}
             <div className="flex flex-col gap-3 pt-14">
               {kitRows.map((row) => (
                 <p
                   key={row.label}
-                  className="text-sm text-muted-foreground h-6 flex items-center"
+                  className="text-xs sm:text-sm text-muted-foreground h-6 flex items-center leading-tight"
                 >
                   {row.label}
                 </p>
               ))}
             </div>
 
+            {/* Colunas dos planos */}
             {(["Pawdant", "Pet'it"] as const).map((plan, i) => (
               <div
                 key={plan}
-                className={`flex flex-col gap-3 rounded-2xl bg-white p-4 ${
-                  i === 1 ? "border border-button-primary" : "border border-border"
+                className={`flex flex-col gap-3 rounded-2xl bg-white p-2 sm:p-4 ${
+                  i === 1
+                    ? "border border-button-primary"
+                    : "border border-border"
                 }`}
               >
-                <p className="text-lg font-bold text-foreground text-center pb-2">
+                <p className="text-sm sm:text-lg font-bold text-foreground text-center pb-2 truncate">
                   {plan}
                 </p>
                 {kitRows.map((row) => {
                   const ok = i === 0 ? row.Pawdant : row.petIt;
                   return (
-                    <div key={row.label} className="h-6 flex items-center justify-center">
+                    <div
+                      key={row.label}
+                      className="h-6 flex items-center justify-center"
+                    >
                       {ok ? (
                         <Check className="h-4 w-4 text-button-primary" />
                       ) : (
@@ -183,8 +187,8 @@ export default function PetTechSection() {
                   );
                 })}
                 <Link
-                  href={''}
-                  className="mt-2 rounded-full bg-button-primary py-2 text-sm font-semibold text-white text-center"
+                  href=""
+                  className="mt-2 rounded-full bg-button-primary py-2 text-xs sm:text-sm font-semibold text-white text-center"
                 >
                   Em breve
                 </Link>
