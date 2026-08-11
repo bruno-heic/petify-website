@@ -1,13 +1,14 @@
 <div align="center">
 
 <p align="center">
-  <img src="public/assets/logo.png" alt="Logo do projeto" width="200">
+  <img src="public/assets/about/telatela.png" alt="Logo do projeto" width="full">
+</p>
+<p align="center">
+<img src="public/assets/logo.png" alt="Logo do projeto" width="200">
 </p>
 
-
-**O cuidado do seu pet, na palma da sua mão.**
-
-Site oficial para adquirir a coleira ou pingente inteligente Petify, um dispositivo que monitora a saúde, localização e rotina do seu pet em tempo real.
+<h1>O cuidado do seu pet, na palma da sua mão.</h1>
+<h3>Site oficial para adquirir a coleira ou pingente inteligente Petify, um dispositivo que monitora a saúde, localização e rotina do seu pet em tempo real.</h3>
 
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
